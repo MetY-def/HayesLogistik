@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hayes Logistik — Gemeinsam. Weiter. Ans Ziel.</title>
+<meta name="description" content="Hayes Logistik — Fernverkehr, Sondertransporte und Spedition im Euro Truck Simulator 2 Rollenspiel-Netzwerk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="road-progress" aria-hidden="true"></div>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#/" class="brand" data-route="/">
+      <img src="logo.png" alt="Hayes Logistik" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        <li><a href="#/" data-route="/">Start</a></li>
+        <li class="has-dropdown">
+          <a href="#/unternehmen" data-route="/unternehmen">Unternehmen</a>
+          <ul class="dropdown">
+            <li><a href="#/unternehmen" data-route="/unternehmen">Über uns</a></li>
+            <li><a href="#/werte" data-route="/werte">Werte</a></li>
+            <li><a href="#/team" data-route="/team">Team &amp; Disposition</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#/leistungen" data-route="/leistungen">Leistungen</a>
+          <ul class="dropdown">
+            <li><a href="#/leistungen" data-route="/leistungen">Übersicht</a></li>
+            <li><a href="#/leistungen/fernverkehr" data-route="/leistungen/fernverkehr">Fernverkehr Europa</a></li>
+            <li><a href="#/leistungen/sondertransporte" data-route="/leistungen/sondertransporte">Sondertransporte</a></li>
+            <li><a href="#/leistungen/spedition" data-route="/leistungen/spedition">Spedition &amp; Disposition</a></li>
+          </ul>
+        </li>
+        <li><a href="#/flotte" data-route="/flotte">Flotte</a></li>
+        <li><a href="#/karriere" data-route="/karriere">Karriere</a></li>
+        <li><a href="#/kontakt" data-route="/kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#/karriere" class="btn btn-ghost" data-route="/karriere">Karriere</a>
+      <a href="#/kontakt" class="btn btn-primary" data-route="/kontakt">Discord</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Hayes Logistik" class="footer-logo">
+      <p>Gemeinsam. Weiter. Ans Ziel.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <ul>
+        <li><a href="#/unternehmen" data-route="/unternehmen">Über uns</a></li>
+        <li><a href="#/werte" data-route="/werte">Werte</a></li>
+        <li><a href="#/team" data-route="/team">Team &amp; Disposition</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Leistungen</h4>
+      <ul>
+        <li><a href="#/leistungen/fernverkehr" data-route="/leistungen/fernverkehr">Fernverkehr Europa</a></li>
+        <li><a href="#/leistungen/sondertransporte" data-route="/leistungen/sondertransporte">Sondertransporte</a></li>
+        <li><a href="#/leistungen/spedition" data-route="/leistungen/spedition">Spedition &amp; Disposition</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Mitmachen</h4>
+      <ul>
+        <li><a href="#/karriere" data-route="/karriere">Bewerbung</a></li>
+        <li><a href="#/flotte" data-route="/flotte">Flotte</a></li>
+        <li><a href="#/kontakt" data-route="/kontakt">Discord beitreten</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-disclaimer">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L22 20 L2 20 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><line x1="12" y1="9" x2="12" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+    <p>Hayes Logistik ist ein <strong>fiktives Unternehmen</strong> im Rahmen eines Euro&nbsp;Truck&nbsp;Simulator&nbsp;2 Rollenspiel-Projekts. Alle Inhalte, Kennzahlen und Personen dienen ausschließlich der Unterhaltung innerhalb der Community und stehen in keinem Zusammenhang mit realen Unternehmen.</p>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Hayes Logistik — Community-Projekt</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
