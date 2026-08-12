@@ -473,6 +473,7 @@ pages['/karriere'] = () => `
           <div class="eyebrow">Was ihr mitbringen solltet</div>
           <h2>Voraussetzungen</h2>
           <ul class="check-list" style="grid-template-columns:1fr;margin-top:22px;">
+            <li>${ICON.check}<span>Mindestalter von 18 Jahren</span></li>
             <li>${ICON.check}<span>Euro Truck Simulator 2 mit aktivem Multiplayer-Mod</span></li>
             <li>${ICON.check}<span>Ein aktiver Discord-Account für Absprache und Konvois</span></li>
             <li>${ICON.check}<span>Zuverlässigkeit — zugesagte Fahrten auch einhalten</span></li>
