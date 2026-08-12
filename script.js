@@ -80,7 +80,7 @@ pages['/'] = () => `
 
   <section class="stats-strip">
     <div class="container">
-      <div class="stat"><span class="num">7</span><span class="label">Aktive Fahrer</span></div>
+      <div class="stat"><span class="num">5</span><span class="label">Aktive Fahrer</span></div>
       <div class="stat"><span class="num">${CONFIG.gegruendet}</span><span class="label">Gegründet</span></div>
       <div class="stat"><span class="num">EU<span class="unit">-27</span></span><span class="label">Streckennetz</span></div>
       <div class="stat"><span class="num">DE<span class="unit">·AT·CH</span></span><span class="label">Sprachraum</span></div>
