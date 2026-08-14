@@ -8,6 +8,8 @@ const CONFIG = {
   gegruendet: "2026",
 };
 
+
+
 /* ============================================
    ICONS (inline SVG, currentColor)
    ============================================ */
@@ -262,22 +264,10 @@ pages['/team'] = () => `
           <p>Gründerin von Hayes Logistik und verantwortlich für die Ausrichtung des gesamten Netzwerks.</p>
         </div>
         <div class="person reveal">
-          <div class="avatar">KD</div>
-          <h4>Kura Diele</h4>
+          <div class="avatar">KH</div>
+          <h4>Kura Hayes</h4>
           <div class="role">Geschäftsführung</div>
           <p>Verantwortlich für die operative Leitung und das große Ganze im Tagesgeschäft.</p>
-        </div>
-        <div class="person reveal">
-          <div class="avatar">FA</div>
-          <h4>Flo Army</h4>
-          <div class="role">Stellvertretung &amp; Disposition</div>
-          <p>Vertritt die Geschäftsführung und plant gemeinsam die Routen und Aufträge des Teams.</p>
-        </div>
-        <div class="person reveal">
-          <div class="avatar">SJ</div>
-          <h4>Speed Junky</h4>
-          <div class="role">Stellvertretung</div>
-          <p>Vertritt die Geschäftsführung und unterstützt bei allen organisatorischen Fragen.</p>
         </div>
       </div>
       <p style="margin-top:36px;font-size:.92rem;color:var(--muted);max-width:640px;">Namen und Rollen der Disposition findet ihr im Detail auf unserem Discord-Server — dort ist das Team auch direkt ansprechbar.</p>
