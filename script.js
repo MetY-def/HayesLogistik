@@ -8,12 +8,6 @@ const CONFIG = {
   gegruendet: "2026",
 };
 
-/* ============================================
-   LADEGÜTER — DATEN
-   Quelle: Frachtenliste (Stellvertretung)
-   Format je Eintrag: [Name, Tonnen, ADR, DLC, Anmerkung, Trailer]
-   ============================================ */
-const CARGO=[["Abgassysteme","3 – 7T","","","","Containertransporter"],["Acetylen","9 – 19T","ADR (Klasse 2)","","","Containertransporter"],["Ahornsirup","17T","","","","Curtainsider"],["Alk. freies Bier","22T","","","","Curtainsider"],["Altkunststoff 1.","3 - 7T","","","","Containertransporter"],["Altkunststoff 2.","9T","","","","Curtainsider"],["Altverpackung","20T","","","","Curtainsider"],["Aluminium Fensterrahmen","10T","","","","Curtainsider"],["Aluminium Barren","26T","","","","Flachbett"],["Aluminium Profiele","16T","","","","Flachbett"],["Antriebsaggregat JCB 1.25QE","12T","","JCB (DLC)","","Flachbett"],["Aquarien","7T","","","","Curtainsider"],["Arbeitskleidung","16T","","","","Curtainsider"],["Arsen","9 – 18T","ADR (Klasse 6)","","","Containertransporter"],["Asphaltfräse","44T","","","Schwerlast","Tieflader/Tiefbett"],["ATL. Kabeljaufilets","16T","","","","Gekühlt"],["AutonomerTraktor","8T","","Farmer (DLC)","","Tieflader/Tiefbett"],["Autos 1","7T","","","","Autotransporter"],["Autos 2","10T","","","","Autotransporter"],["Autos 3","9T","","","","Autotransporter"],["Autos 4","4T","","","","Nfz-Transporter"],["Autos 5","8T","","","","Autotransporter"],["Autos 6","8T","","","","Autotransporter"],["Autos 7","6T","","","","Autotransporter"],["Autos 8","7T","","","","Autotransporter"],["Außenfliesen","19T","","","","Curtainsider"],["Bagger Bobcat E60","6T","","Bobcat (DLC)","","Tieflader/Tiefbett"],["Bagger JCB 245XR","28T","","JCB (DLC)","Schwerlast","Tieflader/Tiefbett"],["Baggerlader","8T","","","","Tieflader/Tiefbett"],["Baggerlader JCB 4CX","8T","","JCB (DLC)","","Tieflader/Tiefbett"],["Ballenpresse","7T","","Farmer (DLC)","","Tieflader/Tiefbett"],["Basilikum","21T","","","","Curtainsider"],["Batterien","15 – 17T","","","","Curt/Container"],["Bauholz","15T","","","","Flachbett"],["Baumrinde","6T","","","","Kipper"],["Baumstämme","24T","","","","Rungen"],["Baumwollerntemaschiene","30T","","","Schwerlast","Tieflader"],["Benzin","21T","ADR (Klasse 3)","","","Kraftstofftank"],["Beton-Bodenplatten","23T","","","1 Auflieger","Tieflader"],["Beton-Lehrgerüst","19T","","","","Flachbett"],["Betontreppe","18T","","","","Flachbett"],["Betonträger 1","14T","","","","Flachbett"],["Betonträger 2","51T","","","Schwerlast","Tieflader/Tiefbett"],["Bewehrungsstahl","15T","","","","Flachbett"],["Bier","22T","","","","Curtainsider"],["Birnen","15T","","","","Curt/Gekühlt"],["Blei","9 – 18T","ADR (Klasse 6)","","","Containertransporter"],["Blumenkohl","9T","","","","Curt/Gekühlt"],["Bohnen","12T","","","","Curtainsider"],["Bohrer/Driller D-50","8T","","","","Tiefbett"],["Bohrsäure","16T","","","","Curtainsider"],["Bremsbeläge","20T","","","","Curtainsider"],["Bremsflüssigkeit","2 - 5T","","","","Containertransporter"],["Bulldozer - Kriecher","39T","","","Schwerlast","Tieflader/Tiefbett"],["Büropapier 1","18T","","","","Curtainsider"],["Büropapier 2","18T","","","","Curtainsider"],["Chemikalien","18T","ADR (Klasse 6)","","","Chemietank"],["Chemische Granulate","15 – 17T","ADR (Klasse 4)","","","Curt/Container"],["Chemisches Sorptionsmittel 1","4 - 8T","","","","Containertransporter"],["Chemisches Sorptionsmittel 2","11T","","","","Curtainsider"],["Chlor 1","8 – 16T","ADR (Klasse 2)","","","Containertransporter"],["Chlor 2","28T","ADR (Klasse 2)","","Schwerlast","Gastank"],["cn_Backpacks","15T","","","","Curtainsider"],["cn_Books","15T","","","","Curtainsider"],["cn_School_sup","15T","","","","Curtainsider"],["Computerprozessoren","3T","","","","Curtainsider"],["Containerbäumen","4T","","","","Curt/Gekühlt"],["Dachfenster","11T","","","","Curtainsider"],["Dachpappe","19T","","","","Curtainsider"],["Dachziegeln","19T","","","","Curt/Pritschen"],["Desinfektionsmittel","16T","","","","Curtainsider"],["Diesel","25T","ADR (Klasse 3)","","","Kraftstofftank"],["Dieselgenerator","21T","","","","Curtainsider"],["Dosenbohnen","16T","","","","Curtainsider"],["Dosenfisch","18T","","","","Gekühlt"],["Dosenrindfleisch","22T","","","","Gekühlt"],["Dosensardienen","18T","","","","Curtainsider"],["Dosenschweinefleisch","22T","","","","Gekühlt"],["Dosenthunfisch","18T","","","","Gekühlt"],["Drehgestelle","18T","","","","Flachbett"],["Druckbehälter","7T","","","","Flachbett"],["Dynamid","17T","ADR (Klasse 1)","","","Curtainsider"],["Düngemittel","19T","","","","Curt/Pritschen"],["Düngerstreuer","14T","","Farmer (DLC)","","Tieflader"],["Einmachgläser","7T","","","","Curtainsider"],["Eisenbahnachsen","23T","","","","Flachbett"],["Eisenrohre 1","20T","","","","Rungen"],["Eisenrohre 2","24T","","","","Flachbett"],["Eiskaffee in Dosen","21T","","","","Curtainsider"],["Elektrische Leitungen","15T","","","","Curtainsider"],["Elektrischer Minibagger JCB 19C-E","5T","","JCB (DLC)","","Flachbett"],["Elektro-Muldenkipper JCB HTD-5E","3T","","JCB (DLC)","","Flachbett"],["Elektronik","8T","","","","Curtainsider"],["Erbsen","18T","","","","Curtainsider"],["Erdaushub","26T","","","Schwerlast","Kipper"],["Erdbauwalze Volvo SD160B","16T","","VOLVO (DLC)","","Tieflader/Tiefbett"],["Erdnussbutter","19T","","","","Curt/Gekühlt"],["Erntebehälter","2T","","Farmer (DLC)","","Curtainsider"],["Erz","25T","","","","Kipper"],["Essig 1","15T","","","","Curtainsider"],["Essig 2","4 – 9T","","","","Containertransporter"],["Ethan","21T","ADR (Klasse 2)","","","Gastank"],["Explosive Stoffe","12T","ADR (Klasse 1)","","","Curtainsider"],["Felbinder EUT","6T","","","Felbinder",""],["Felbinder KIP","6T","","","Felbinder",""],["Felbinder TSA ADR","6T","","","Felbinder",""],["Felbinder TSA LM","6T","","","Felbinder",""],["Feldhäcksler","13T","","Farmer (DLC)","","Tieflader"],["Feldhäcksler Krone BIG X 1180","17T","","KRONE (DLC)","","Tieflader"],["Feldspritze","15T","","Farmer (DLC)","","Tieflader"],["Fertighauswände","22T","","","1 Auflieger","Tieflader"],["Fertigtreppen (Beton)","22T","","","","Curtainsider"],["Fettversiegelte Lager","23T","","","","Curtainsider"],["Feuerwerkskörper","9T","ADR (Klasse 1)","","","Curtainsider"],["Fischstäbchen","17T","","","","Curtainsider"],["Flach Verpackte Möbel 1","18T","","","","Curtainsider"],["Flach Verpackte Möbel 2","18T","","","","Curtainsider"],["Flugzeugreifen","18T","","","","Curtainsider"],["Flour","6 – 13T","ADR (Klasse 2)","","","Containertransporter"],["Forst Raupenbagger","17T","","Forst DLC","","Tieflader"],["Forstmulcher","14T","","Forst DLC","","Tieflader/Tiefbett"],["Frische Kräuter","5T","","","","Gekühlt"],["Frischer Fisch","18T","","","","Gekühlt"],["Gabelstabler","16T","","","","Tiefbett"],["Gabelstapler Bobcat D30","4 - 9T","","Bobcat (DLC)","","Tiefbett"],["Gebrauchte Autobatterien","17T","","","","Curtainsider"],["Gefrohrener Oktopuss (Tintenfisch)","14T","","","","Gekühlt"],["Geländegängiger Gabelstapler","12T","","","","Flachbett"],["Gerste","16 - 18T","","","","Kipper/Silo"],["Geräucherte Sprotten","17T","","","","Curtainsider"],["Geräucherter Aal","11T","","","","Gekühlt"],["Gerüstmaterial","22T","","","","Curtainsider"],["Gesteinsmehl","25T","","","Schwerlast","Kipper/Silo"],["Getriebe","14T","","","","Curtainsider"],["Getränke 1","26T","","","Schwerlast","Lebensmitteltank"],["Getränke 2","10 – 21T","","","","Containertransporter"],["Getränke 3","23T","","","","Curtainsider"],["Giant Haulie (covered)","1- 2T","","","Haulie Event","Flachbett/Tiefbett"],["Glasscheiben","21T","","","","Flachbett"],["Gleiskette","11T","","","","Tiefbett"],["Gnocchi","18T","","","","Gekühlt"],["Granitblöcke","25T","","","Schwerlast","Kipper"],["Graphitfett","16T","","","","Curtainsider"],["Großer Container","11T","","","","Flachbett/Tiefbett"],["Große Eisenrohre","21T","","","","Flachbett/Rugen"],["Gummibärchen","21T","","","","Curtainsider"],["Hardware","24T","","","","Curtainsider"],["Haushaltsgegenstände","8T","","","","Curtainsider"],["Heizöl","25T","ADR (Klasse 3)","","","Kraftstofftank"],["Heiße Chemikalien","19T","ADR (Klasse 6)","","","Chemietank"],["Hochdruckabperrventiele","19T","","","","Curtainsider"],["Hochspannungsleitungen","21T","","","","Curtainsider"],["Holzbalken","13T","","","","Curt/Flachbett"],["Holzvollernter","22T","","Forst DLC","","Tieflader"],["Honig","20T","","","","Curtainsider"],["Hubschrauber - Ring - 429","3T","","","","Tieflader/Tiefbett"],["Hühnerfleisch","17T","","","","Gekühlt"],["Hüttenkäse","18T","","","","Gekühlt"],["IBC-Container","11T","","","","Curtainsider"],["Industiekabeltrommel","34T","","","Schwerlast","Tieflader"],["Industrieruß","3 – 7T","","","","Containertransporter"],["Jacht","6T","","","","Tiefbett"],["Jogurt","17T","","","","Gekühlt"],["Junge Setzlinge","3T","","","","Curt/Gekühlt"],["Kalium","10 – 20T","ADR (Klasse 4)","","","Containertransporter"],["Kaliumhydroxid","19T","ADR (Klasse 8)","","","Chemietank"],["Kaminsysteme","18T","","","","Curtainsider"],["Karotten 1","16T","","","","Curtainsider"],["Karotten 2","7 – 15T","","","","Containertransporter"],["Kartoffeln","22T","","","","Curtainsider"],["Kastenwagen 1","6T","","","","Nfz-Transporter"],["Kastenwagen 2","6T","","","","Nfz-Transporter"],["Kastenwagen 3","8T","","","","LKW-Transporter"],["Kaugummi","23T","","","","Curtainsider"],["Kautschuk","21T","","","","Curtainsider"],["Karviar","14T","","","","Gekühlt"],["Kerosin","23T","ADR (Klasse 3)","","","Kraftstofftank"],["Ketchup","15T","","","","Curtainsider"],["Kies","25T","","","Schwerlast","Kipper"],["Klebebandrollen 1","18T","","","","Curtainsider"],["Klebebandrollen 2","5 - 11T","","","","Containertransporter"],["Klebebandrollen 3","18T","","","","Curtainsider"],["Kleidung 1","15T","","","","Curtainsider"],["Kleidung 2","9 – 18T","","","","Containertransporter"],["Klimanlagen 1","8 – 11T","","","","Tieflader/Tiefbett"],["Klimanlagen 2","14T","","","","Tiefbett"],["Knickgelenk-Dumper Volvo A25G","25T","","VOLVO (DLC)","","Tieflader/Tiefbett"],["Knoblauch","12T","","","","Curtainsider"],["Kohle","24T","","","","Kipper"],["Kokosnussmilch","23T","","","","Curtainsider"],["Kokosnussöl","23T","","","","Curtainsider"],["Kompakte Generatoren JCB G1000RS","11T","","JCB (DLC)","","Flachbett"],["Kompaktlader Bobcat S86","4 – 9T","","Bobcat (DLC)","","Tiefbett"],["Kompressor Bobcat PA12.7v","2 – 3T","","Bobcat (DLC)","","Flachbett/Tiefbett"],["Kontaminiertes Material","10-20T","ADR (Klasse 6)","","","Containertransporter"],["Kork","5T","","","","Curtainsider"],["Kraftstofftank","9 – 19T","ADR (Klasse 3)","","","Containertransporter"],["Kraftstofftanks","10T","","","","Curtainsider"],["Krankenhausabfälle","11 – 23T","ADR (Klasse 3)","","","Containertransporter"],["Kreiselrechen Krone Swardro TC 1370","4T","","KRONE (DLC)","","Tieflader"],["Krone Box Liner","10T","","KRONE (DLC)","",""],["Krone Cool Liner","8T","","KRONE (DLC)","",""],["Krone Profi Liner","6T","","KRONE (DLC)","",""],["Krone Profi Liner Building","6T","","KRONE (DLC)","",""],["Kugelventiele","22T","","","","Curtainsider"],["Kunststoffgranulat","24T","","","","Silo"],["Kunststoffrohre","5T","","","","Flachbett"],["Kupferdachrinnen","8T","","","","Curtainsider"],["Käse","18T","","","","Gekühlt"],["Körperpflegeprodukten","18T","","","","Curtainsider"],["Lachsfilet","14T","","","","Gekühlt"],["Lammmägen","13T","","","","Gekühlt"],["Landwirtschaftlicher Teleskoplader Bobcat TL30.70","5T","","Bobcat (DLC)","","Tieflader/Tiefbett"],["Langholzschlepper","19T","","Forst DLC","","Tieflader"],["Lastwagen - MAN","14T","","","","LKW-Transporter"],["Lastwagen - DAF","14T","","","","LKW-Transporter"],["Lavendel","15T","","","","Curtainsider"],["Lebendrinder","23T","","","","Viehtransporter"],["Leberwurst","17T","","","","Gekühlt"],["Leere Fässer","9T","","","","Curtainsider"],["Leere Paletten 1","22T","","","","Curtainsider"],["Leere Paletten 2","22T","","","","Curtainsider"],["Leere Spule","780Kg – 1T","","","","Flachbett/Tiefbett"],["Leere Weinflaschen","13T","","","","Curtainsider"],["Leere Weinfässer","8T","","","","Curtainsider"],["Leergerüst","28T","","","Schwerlast","Tieflader"],["Leitpfosten","12T","","","","Curtainsider"],["Leitplanken","22T","","","","Curtainsider"],["Limonade","23T","","","","Curtainsider"],["LKW Batterien 1","18T","","","","Curtainsider"],["LKW Batterien 2","7 – 14T","","","","Containertransporter"],["LKW Felgen 1","12T","","","","Curtainsider"],["LKW Felgen 2","4 – 9T","","","","Containertransporter"],["LKW Reifen","13T","","","","Curtainsider"],["Locomotive CZ LOKO Effi Shunter 300","36T","","","Schwerlast","Tiefbett"],["Locomotive CZ LOKO MUV 75","14T","","","","Tiefbett"],["Locomotive Vossloh G6","61T","","","Schwerlast","Tiefbett"],["LPG 1","10 – 21T","ADR (Klasse 2)","","","Containertransporter"],["LPG 2","22T","ADR (Klasse 2)","","","Gastank"],["Luftpost","10T","","","","Curtainsider"],["Luxus – Jacht","9T","","","","Tieflader/Tiefbett"],["Luxus SUV´s","11T","","","","Autotransporter"],["Lüftungsschacht","4T","","","","Flachbett"],["Magnesium","8 – 17T","ADR (Klasse 4)","","","Containertransporter"],["Mandeln","17T","","","","Curtainsider"],["Marmorblöcke 1","21T","","","","Flachbett"],["Marmorblöcke 2","24T","","","","Flachbett"],["Marmorplatte","23T","","","","Flachbett"],["Materialumschlaggerät","36T","","VOLVO (DLC)","","Tieflader"],["Medizinische Ausrüstung","5T","","","","Curtainsider"],["Medizinische Impfstoffe","5T","ADR (Klasse 6)","","","Gekühlt"],["Meeresfrüchte","18T","","","","Gekühlt"],["Mehl","20T","","","","Curtainsider"],["Metalldosen","9T","","","","Curtainsider"],["Metallschrott","23T","","","","Kipper"],["Metallspulen","25T","","","","Flachbett"],["Metallträger","23T","","","","Flachbett"],["Milch 1","26T","","","Schwerlast","Lebensmitteltank"],["Milch 2","20T","","","","Curtainsider"],["Milchprodukte","22T","","","","Gekühlt"],["Milchpulver","18T","","","","Curtainsider"],["Mineralwasser","23T","","","","Curtainsider"],["Minibagger Bobcat E10e","3T","","Bobcat (DLC)","","Flachbett"],["Mobile Air Compressor","3T","","","","Flachbett/Tiefbett"],["Mobiele Siebmaschiene","39T","","","Schwerlast","Tieflader"],["Mobiele Zugwinde","10T","","","","Tieflader/Tiefbett"],["Mobieler Brecher","40T","","","Schwerlast","Tieflader/Tiefbett"],["Mobieler Stapler","10T","","","","Tieflader/Tiefbett"],["Mobilkran","36T","","","Schwerlast","Tieflader"],["Motorkühler","9T","","","","Curtainsider"],["Motorradgabeln","16T","","","","Curtainsider"],["Motorradreifen","22T","","","","Curtainsider"],["Motorroller","9T","","","","Curtainsider"],["Motorräder","15T","","","","Curtainsider"],["Motoröl 1","7 - 14T","","","","Containertransporter"],["Motoröl 2","18T","","","","Curtainsider"],["Mozzarelle","20T","","","","Gekühlt"],["Muldenkipper JCB 6T-2","5T","","JCB (DLC)","","Tieflader/Tiefbett"],["Munition","18T","ADR (Klasse 1)","","","Curtainsider"],["Mähaufbereiter Krone BIG M 450","","","KRONE (DLC)","","Tieflader"],["Möbel","16T","","","","Curtainsider"],["Natrium","9 – 19T","ADR (Klasse 4)","","","Containertransporter"],["Natriumhydroxid","9 – 18T","ADR (Klasse 8)","","","Containertransporter"],["Natriumhypochlorit","18T","ADR (Klasse 8)","","","Chemietank"],["Neon","8 - 17T","ADR (Klasse 2)","","","Containertransporter"],["Nitrozellulose","6 – 13T","ADR (Klasse 4)","","","Containertransporter"],["Nylonschnur","23T","","","","Curtainsider"],["Nüsse","18T","","","","Curtainsider"],["Oliven","18T","","","","Curtainsider"],["Olivenbäume","2T","","","","Pritschen"],["Olivenöl 1","17T","","","","Curtainsider"],["Olivenöl 2","25T","","","","Lebensmitteltank"],["Orangen","20T","","","","Gekühlt"],["Pasta","20T","","","","Curtainsider"],["Pestizide","10 - 21T","ADR (Klasse 6)","","","Containertransporter"],["Pesto","18T","","","","Curtainsider"],["Pferdeanhänger","7T","","","","LKW-Transporter"],["Pflanzmaschiene","8T","","Farmer (DLC)","","Tieflader"],["Pflanzensubstrat","17T","","","","Curtainsider"],["Pflaumen","16T","","","","Gekühlt"],["Pickup-Trucks","6T","","","","LKW-Transporter"],["PKW-Motoren","4T","","","","Curtainsider"],["Postpakete","11T","","","","Curtainsider"],["Propan","19T","ADR (Klasse 2)","","","Gastank"],["Pumpen","14T","","","","Curtainsider"],["Quaderballenpresse Krone BIG Pack 1290 HDP VC","10T","","KRONE (DLC)","","Tieflader"],["Quecksilberchlorid","11 - 22T","ADR (Klasse 6)","","","Containertransporter"],["Radlader","15T","","","","Tieflader/Tiefbett"],["Radlader Bobcat L95","5T","","Bobcat (DLC)","","Tieflader/Tiefbett"],["Radlader JCB 457","20T","","JCB (DLC)","","Tieflader/Tiefbett"],["Radlader Volvo L250H","35T","","VOLVO (DLC)","Schwerlast","Tieflader/Tiefbett"],["Radlader-Schaufel Volvo SPN P T SEG","3T","","VOLVO (DLC)","","Tieflader/Tiefbett"],["Raupenbagger","21T","","","","Tieflader/Tiefbett"],["Raupenbagger Volvo EC220E","20T","","VOLVO (DLC)","","Tieflader/Tiefbett"],["Raupenfahrzeug","10T","","","","Tieflader/Tiefbett"],["Raupentraktor","13T","","","","Tieflader/Tiefbett"],["Raupentraktor 2","25T","","","Schwerlast","Tieflader"],["Reifen","16T","","","","Curtainsider"],["Reis 1","8 – 17T","","","","Containertransporter"],["Reis 2","22T","","","","Curtainsider"],["Rentierfleisch","13T","","","","Gekühlt"],["Rindfleisch","21T","","","","Gekühlt"],["Roggen","18 - 21T","","","","Kipper/Silo"],["Rohrleitungszubehör","18T","","","","Curtainsider"],["Roller","8T","","","","Tieflader/Tiefbett"],["Rollrasen","15T","","","","Curtainsider"],["Rundballenpresse Krone Vari Pack V 190 XC","4T","","KRONE (DLC)","","Tieflader/Tiefbett"],["Räder mit VOLVO Felgen","11T","","VOLVO (DLC)","","Flachbett"],["Rückezug","20T","","Forst DLC","","Tieflader"],["Rückschlagventile","23T","","","","Curtainsider"],["Saatgut Bigbags","19T","","","","Curtainsider"],["Saftkonzentrat 1","23T","","","","Curtainsider"],["Saftkonzentrat 2","26T","","","","Lebensmitteltank"],["Salz und Gewürze 1","6 – 12T","","","","Containertransporter"],["Salz und Gewürze 2","16T","","","","Curtainsider"],["Salzsäure","21T","ADR (Klasse 8)","","","Chemietank"],["Sand","25T","","","","Kipper/Silo"],["Sandwichpaneele","12T","","","","Curtainsider"],["Satteltieflader","17T","","","","Tiefbett"],["Schafwolle","13T","","","","Curtainsider"],["Scheibeneggen","6T","","Farmer (DLC)","","Tieflader/Tiefbett"],["Scheibenmähwerk Krone EasyCut B88 CV","2T","","KRONE (DLC)","","Tiefbett"],["Schinken","16T","","","","Gekühlt"],["Schnittblumen","1T","","","","Gekühlt"],["Schokolade","23T","","","","Curtainsider"],["Schutzkleidung","20T","","","","Curtainsider"],["Schwefelsäure 1","25T","ADR (Klasse 8)","","Schwerlast","Chemietank"],["Schwefelsäure 2","10 – 20T","ADR (Klasse 8)","","","Containertransporter"],["Schweine","10T","","","","Viehtransporter"],["Schweinefleisch","18T","","","","Gekühlt"],["Schwermetalle","10 – 20T","ADR (Klasse 6)","","","Containertransporter"],["Siliziumdioxyd","19T","","","","Curtainsider"],["Sojamilch 1","21T","","","","Curtainsider"],["Sojamilch 2","25T","","","","Lebensmitteltank"],["Spanplatten","21T","","","","Curtainsider"],["Speiseeis","14T","","","","Gekühlt"],["Speiseöl","25T","","","","Lebensmitteltank"],["Spielzeug","9T","","","","Curtainsider"],["Stahlseile","14T","","","","Curtainsider"],["Steine","25T","","","Schwerlast","Kipper"],["Steinwolle","5T","","","","Curtainsider"],["Stickstoff","9 – 18T","ADR (Klasse 2)","","","Containertransporter"],["Stilles Mineralwasser i. Flaschen","23T","","","","Curtainsider"],["Stoßdämpfer","16T","","","","Curtainsider"],["Strohballen","15T","","","","Curt/Flachbett"],["Styroporkisten","3T","","","","Curtainsider"],["SUV´s","12T","","","","Autotransporter"],["Sägespäne","4T","","","","Kipper/Silo"],["Säure","19T","ADR (Klasse 8)","","","Chemietank"],["Tafelgeschirr","16T","","","","Curtainsider"],["Teile für Gaspipeline","21T","","","","Tieflader/Tiefbett"],["Teleskoplader JCB 540-180","11T","","JCB (DLC)","","Tieflader/Tiefbett"],["Tiefgekühlter Seehecht","17T","","","","Gekühlt"],["Tierfutter 1","9 – 18T","","","","Containertransporter"],["Tierfutter 2","20T","","","","Curtainsider"],["Tomaten","18T","","","","Gekühlt"],["Topfpflanzen","3T","","","","Gekühlt"],["Tracktor JCB-Fastrac 4220","9T","","JCB (DLC)","","Tieflader/Tiefbett"],["Tracktoren","8T","","","","Tieflader/Tiefbett"],["Transformator - PK900","47T","","","Schwerlast","Tieflader"],["Trauben","14T","","","","Gekühlt"],["Trockener Zement","26T","","","Schwerlast","Curtainsider"],["Umschlagbagger Volvo EW240E MH","26T","","VOLVO (DLC)","Schwerlast","Tieflader/Tiefbett"],["Verpackte Lebensmittel","17T","","","","Curtainsider"],["Verpacktes Glas","22T","","","","Innenlader"],["Verpackungshelfer","19T","","","","Flachbett"],["Vierkantrohre","14T","","","","Flachbett"],["Vorratstank","6T","","","","Flachbett"],["Wagen Krone GX 520","10T","","KRONE (DLC)","","Tieflader"],["Wasserfreies Ammoniak","27T","ADR (Klasse 2)","","","Gastank"],["Wassermelonen","20T","","","","Gekühlt"],["Wasserstoff","2- 5T","ADR (Klasse 2)","","","Containertransporter"],["Wassertank","1 - 2T","","","","Flachbett/Tieflader"],["Weizen","17 – 19T","","","","Kipper/Silo"],["Weißer Phosphor","8 - 17T","ADR (Klasse 4)","","","Containertransporter"],["Windkraftwerksgondel","21T","","","","Flachbett/Tieflader"],["Windkraftwerksturm","9T","","","","Tiefbett/Tieflader"],["Wohnmobile","6T","","","","LKW-Transporter"],["Wäschetrockner","13T","","","","Curtainsider"],["Würste","17T","","","","Gekühlt"],["Zement","24T","","","","Silo"],["Ziegelsteine","19T","","","","Pritschen"],["Ziegenkäse","15T","","","","Gekühlt"],["Zucker 1","7T","","","","Silo"],["Zucker 2","22T","","","","Curtainsider"],["Zugmaschiene – Scania","14T","","","","LKW-Transporter"],["Zugmaschiene – Volvo","14T","","","","LKW-Transporter"],["Zwiebeln","17T","","","","Curtainsider"],["Zyanid","11 - 22T","ADR (Klasse 6)","","","Containertransporter"],["Äpfel 1","20T","","","","Curtainsider"],["Äpfel 2","9 – 18T","","","","Containertransporter"],["Öl","24T","ADR (Klasse 3)","","","Kraftstofftank"],["Ölfilter 1","4 – 9T","","","","Containertransporter"],["Ölfilter 2","12T","","","","Curtainsider"],["Überladewagen","7T","","Farmer (DLC)","","Tieflader"]];
 
 
 /* ============================================
@@ -460,49 +454,6 @@ function truckIcon(){
   </svg>`;
 }
 
-/* ---------- LADEGÜTER ---------- */
-pages['/ladegueter'] = () => `
-  <div class="page-header">
-    <div class="container">
-      ${routeLabel(['Ladegüter'])}
-      <h1>Ladegüter</h1>
-      <p>Ein Überblick über die Frachten, die bei Hayes Logistik unterwegs sind — von Alltagsgütern bis zum ADR-Sondertransport. Zusammengestellt von unserer Disposition.</p>
-    </div>
-  </div>
-
-  <section class="section" style="padding-top:56px;">
-    <div class="container">
-      <div class="cargo-toolbar reveal">
-        <div class="cargo-search-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          <input type="text" id="cargo-search" placeholder="Fracht suchen …" autocomplete="off">
-        </div>
-        <select id="cargo-trailer-filter"></select>
-        <select id="cargo-adr-filter"></select>
-      </div>
-
-      <div class="cargo-count" id="cargo-count"></div>
-
-      <div class="cargo-table-wrap reveal">
-        <table class="cargo-table">
-          <thead>
-            <tr>
-              <th class="sortable" data-sort="0" data-type="text">Fracht<span class="sort-arrow"></span></th>
-              <th class="sortable" data-sort="1" data-type="weight">Gewicht<span class="sort-arrow"></span></th>
-              <th class="sortable" data-sort="5" data-type="text">Trailer<span class="sort-arrow"></span></th>
-              <th>Hinweise</th>
-            </tr>
-          </thead>
-          <tbody id="cargo-tbody"></tbody>
-        </table>
-        <p class="cargo-empty" id="cargo-empty" hidden>Keine Fracht gefunden — Suchbegriff oder Filter anpassen.</p>
-      </div>
-
-      <p style="margin-top:28px;font-size:.88rem;color:var(--muted);max-width:640px;">Liste ohne Anspruch auf Vollständigkeit. Änderungen und aktuelle Sonderfrachten bespricht die Disposition laufend im Discord-Server.</p>
-    </div>
-  </section>
-`;
-
 /* ---------- KARRIERE ---------- */
 pages['/karriere'] = () => `
   <div class="page-header">
@@ -627,7 +578,6 @@ function render(){
   app.focus();
   closeMobileNav();
   initReveal();
-  initLadegueter();
 }
 
 window.addEventListener('hashchange', render);
@@ -653,120 +603,6 @@ function closeMobileNav(){
   mainNav.classList.remove('mobile-open');
   navToggle.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
-}
-
-/* ============================================
-   LADEGÜTER — SUCHE & FILTER
-   ============================================ */
-function initLadegueter(){
-  const search = document.getElementById('cargo-search');
-  const trailerFilter = document.getElementById('cargo-trailer-filter');
-  const adrFilter = document.getElementById('cargo-adr-filter');
-  const tbody = document.getElementById('cargo-tbody');
-  const countEl = document.getElementById('cargo-count');
-  const emptyEl = document.getElementById('cargo-empty');
-  const sortHeaders = document.querySelectorAll('.cargo-table th.sortable');
-  if(!search || !tbody) return; // Seite nicht aktiv
-
-  const trailers = [...new Set(CARGO.map(c => c[5]).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'de'));
-  trailerFilter.innerHTML = '<option value="">Alle Trailer</option>' +
-    trailers.map(t => `<option value="${t}">${t}</option>`).join('');
-
-  const adrClasses = [...new Set(CARGO.map(c => c[2]).filter(Boolean))].sort((a,b) => a.localeCompare(b, 'de'));
-  adrFilter.innerHTML = '<option value="">Alle Frachten</option><option value="__adr__">Nur ADR-Fracht</option>' +
-    adrClasses.map(a => `<option value="${a}">${a}</option>`).join('');
-
-  function escapeHTML(str){
-    return String(str).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
-  }
-
-  // Gewicht als Zahl fürs Sortieren nutzbar machen (z.B. "9 – 19T" -> 9, "17T" -> 17)
-  function weightValue(str){
-    const match = String(str).match(/[\d.,]+/);
-    return match ? parseFloat(match[0].replace(',', '.')) : -1;
-  }
-
-  // Sortier-Status: Spaltenindex + Richtung. Standard: alphabetisch nach Fracht.
-  let sortCol = 0;
-  let sortDir = 1; // 1 = aufsteigend, -1 = absteigend
-
-  function updateSortIndicators(){
-    sortHeaders.forEach(th => {
-      const col = parseInt(th.dataset.sort, 10);
-      th.classList.toggle('sort-active', col === sortCol);
-      const arrow = th.querySelector('.sort-arrow');
-      if(col === sortCol){
-        arrow.textContent = sortDir === 1 ? '▲' : '▼';
-      } else {
-        arrow.textContent = '';
-      }
-    });
-  }
-
-  function renderRows(){
-    const q = search.value.trim().toLowerCase();
-    const tVal = trailerFilter.value;
-    const aVal = adrFilter.value;
-
-    let filtered = CARGO.filter(c => {
-      if(q && !c[0].toLowerCase().includes(q)) return false;
-      if(tVal && c[5] !== tVal) return false;
-      if(aVal === '__adr__' && !c[2]) return false;
-      if(aVal && aVal !== '__adr__' && c[2] !== aVal) return false;
-      return true;
-    });
-
-    filtered = filtered.slice().sort((a, b) => {
-      let av, bv;
-      if(sortCol === 1){
-        av = weightValue(a[1]); bv = weightValue(b[1]);
-        return (av - bv) * sortDir;
-      }
-      av = (a[sortCol] || '').toLowerCase();
-      bv = (b[sortCol] || '').toLowerCase();
-      return av.localeCompare(bv, 'de') * sortDir;
-    });
-
-    countEl.textContent = `${filtered.length} von ${CARGO.length} Frachten`;
-
-    if(filtered.length === 0){
-      tbody.innerHTML = '';
-      emptyEl.hidden = false;
-    } else {
-      emptyEl.hidden = true;
-      tbody.innerHTML = filtered.map(c => {
-        const [name, tonnen, adr, dlc, anmerkung, trailer] = c;
-        const badges = [adr, dlc, anmerkung].filter(Boolean)
-          .map(x => `<span class="cargo-badge${x===adr ? ' cargo-badge-adr' : ''}">${escapeHTML(x)}</span>`).join('');
-        return `<tr>
-          <td>${escapeHTML(name)}</td>
-          <td>${escapeHTML(tonnen) || '–'}</td>
-          <td>${escapeHTML(trailer) || '–'}</td>
-          <td>${badges || '<span class="cargo-badge-none">–</span>'}</td>
-        </tr>`;
-      }).join('');
-    }
-
-    updateSortIndicators();
-  }
-
-  sortHeaders.forEach(th => {
-    th.addEventListener('click', () => {
-      const col = parseInt(th.dataset.sort, 10);
-      if(sortCol === col){
-        sortDir *= -1;
-      } else {
-        sortCol = col;
-        sortDir = 1;
-      }
-      renderRows();
-    });
-  });
-
-  search.addEventListener('input', renderRows);
-  trailerFilter.addEventListener('change', renderRows);
-  adrFilter.addEventListener('change', renderRows);
-  renderRows();
 }
 
 /* ============================================
