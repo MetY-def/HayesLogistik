@@ -4,7 +4,7 @@
    ============================================ */
 const CONFIG = {
   discordInvite: "https://discord.gg/JYTReebRTb",
-  bewerbungsLink: "https://hub.truckyapp.com/vtc/hayes-logistik",
+  bewerbungsLink: "https://trucksbook.eu/company/226854",
   gegruendet: "2026",
 };
 
