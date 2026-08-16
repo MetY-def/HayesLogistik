@@ -470,32 +470,6 @@ pages['/karriere'] = () => `
 
   <section class="section">
     <div class="container">
-      <div class="split">
-        <div class="reveal">
-          <div class="eyebrow">Was ihr mitbringen solltet</div>
-          <h2>Voraussetzungen</h2>
-          <ul class="check-list" style="grid-template-columns:1fr;margin-top:22px;">
-            <li>${ICON.check}<span>Mindestalter von 18 Jahren</span></li>
-            <li>${ICON.check}<span>Euro Truck Simulator 2 mit aktivem Multiplayer-Mod</span></li>
-            <li>${ICON.check}<span>Ein aktiver Discord-Account für Absprache und Konvois</span></li>
-            <li>${ICON.check}<span>Zuverlässigkeit — zugesagte Fahrten auch einhalten</span></li>
-            <li>${ICON.check}<span>Grundlegendes Verständnis für Rollenspiel-Regeln im Straßenverkehr</span></li>
-            <li>${ICON.check}<span>Lust, Teil einer Community zu sein — kein Solo-Ritt</span></li>
-          </ul>
-        </div>
-        <div class="panel reveal" style="padding:44px;">
-          <h3 style="margin-bottom:14px;">Bereit loszufahren?</h3>
-          <p style="margin-bottom:26px;">Die Bewerbung läuft über unser Bewerbungsformular — dauert nur wenige Minuten.</p>
-          <a href="${CONFIG.bewerbungsLink}" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-block">Bewerbung starten</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="road-divider"></div>
-
-  <section class="section">
-    <div class="container">
       <div class="section-head reveal">
         <div class="eyebrow">Ablauf</div>
         <h2>So läuft eure Bewerbung</h2>
@@ -516,6 +490,32 @@ pages['/karriere'] = () => `
         <div class="step reveal">
           <span class="num">04</span>
           <div><h3>Aufnahme ins Team</h3><p>Nach erfolgreicher Probefahrt seid ihr offiziell Teil von Hayes Logistik — willkommen an Bord.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="road-divider"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <div class="eyebrow">Was ihr mitbringen solltet</div>
+          <h2>Voraussetzungen</h2>
+          <ul class="check-list" style="grid-template-columns:1fr;margin-top:22px;">
+            <li>${ICON.check}<span>Mindestalter von 18 Jahren</span></li>
+            <li>${ICON.check}<span>Euro Truck Simulator 2 mit aktivem Multiplayer-Mod</span></li>
+            <li>${ICON.check}<span>Ein aktiver Discord-Account für Absprache und Konvois</span></li>
+            <li>${ICON.check}<span>Zuverlässigkeit — zugesagte Fahrten auch einhalten</span></li>
+            <li>${ICON.check}<span>Grundlegendes Verständnis für Rollenspiel-Regeln im Straßenverkehr</span></li>
+            <li>${ICON.check}<span>Lust, Teil einer Community zu sein — kein Solo-Ritt</span></li>
+          </ul>
+        </div>
+        <div class="panel reveal" style="padding:44px;">
+          <h3 style="margin-bottom:14px;">Bereit loszufahren?</h3>
+          <p style="margin-bottom:26px;">Die Bewerbung läuft über unser Bewerbungsformular — dauert nur wenige Minuten.</p>
+          <a href="${CONFIG.bewerbungsLink}" target="_blank" rel="noopener" class="btn btn-primary btn-lg btn-block">Bewerbung starten</a>
         </div>
       </div>
     </div>
