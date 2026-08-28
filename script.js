@@ -80,6 +80,21 @@ pages['/'] = () => `
     </div>
   </section>
 
+  <section class="section" style="padding-top:48px;padding-bottom:0;">
+    <div class="container">
+      <div class="cta-banner reveal" style="border-color:var(--red-dim);">
+        <div>
+          <div class="eyebrow" style="margin-bottom:8px;">Neu seit 27.08.2026</div>
+          <h2>Wir expandieren in die USA 🇺🇸</h2>
+          <p>Hayes Logistik ist ab sofort nicht mehr nur in Euro Truck Simulator 2 unterwegs, sondern auch im American Truck Simulator. Neues Land, neue Strecken, gleiches Team.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="#/leistungen/usa" class="btn btn-primary" data-route="/leistungen/usa">Mehr erfahren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="stats-strip">
     <div class="container">
       <div class="stat"><span class="num">5</span><span class="label">Aktive Fahrer</span></div>
@@ -299,7 +314,7 @@ pages['/leistungen'] = () => `
 
   <section class="section">
     <div class="container">
-      <div class="grid grid-3">
+      <div class="grid grid-4">
         <div class="card reveal">
           <div class="icon">${ICON.route}</div>
           <h3>Fernverkehr Europa</h3>
@@ -317,6 +332,12 @@ pages['/leistungen'] = () => `
           <h3>Spedition &amp; Disposition</h3>
           <p>Koordination, Routenplanung und Auftragsvergabe für ein reibungsloses Netzwerk.</p>
           <a href="#/leistungen/spedition" class="card-link" data-route="/leistungen/spedition">Details ansehen</a>
+        </div>
+        <div class="card reveal">
+          <div class="icon">${ICON.compass}</div>
+          <h3>Fernverkehr USA</h3>
+          <p>Unsere neue Sparte im American Truck Simulator — Strecken quer durch die USA, seit 27.08.2026.</p>
+          <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Details ansehen</a>
         </div>
       </div>
     </div>
@@ -399,6 +420,19 @@ pages['/leistungen/spedition'] = () => serviceDetail(
     'Laufende Abstimmung zwischen Fahrern und Team',
   ],
   ICON.radio
+);
+
+pages['/leistungen/usa'] = () => serviceDetail(
+  'Fernverkehr USA',
+  'Expansion · seit 27.08.2026',
+  'Unsere neue Sparte im American Truck Simulator — Hayes Logistik ist jetzt auch auf den Straßen der USA unterwegs.',
+  [
+    'Strecken quer durch die USA im American Truck Simulator',
+    'Gleiche Disposition und Absprache wie im Europa-Netzwerk',
+    'Für Fahrerinnen und Fahrer, die neben ETS2 auch ATS besitzen',
+    'Wird laufend um weitere Routen und Bundesstaaten erweitert',
+  ],
+  ICON.compass
 );
 
 /* ---------- FLOTTE ---------- */
