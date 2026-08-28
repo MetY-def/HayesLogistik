@@ -531,8 +531,9 @@ pages['/karriere'] = () => `
           <ul class="check-list" style="grid-template-columns:1fr;margin-top:22px;">
             <li>${ICON.check}<span>Mindestalter von 18 Jahren</span></li>
             <li>${ICON.check}<span>Euro Truck Simulator 2 mit aktivem Multiplayer-Mod</span></li>
-            <li>${ICON.check}<span>American Truck Simulator mit aktivem Multiplayer-Mod</span></li>
+            <li>${ICON.check}<span>Optional: American Truck Simulator mit aktivem Multiplayer-Mod</span></li>
             <li>${ICON.check}<span>Ein aktiver Discord-Account für Absprache und Konvois</span></li>
+            <li>${ICON.check}<span>Ein Trucksbook Account</span></li>
             <li>${ICON.check}<span>Zuverlässigkeit — zugesagte Fahrten auch einhalten</span></li>
             <li>${ICON.check}<span>Grundlegendes Verständnis für Rollenspiel-Regeln im Straßenverkehr</span></li>
             <li>${ICON.check}<span>Lust, Teil einer Community zu sein — kein Solo-Ritt</span></li>
