@@ -80,26 +80,11 @@ pages['/'] = () => `
     </div>
   </section>
 
-  <section class="section" style="padding-top:48px;padding-bottom:0;">
-    <div class="container">
-      <div class="cta-banner reveal" style="border-color:var(--red-dim);">
-        <div>
-          <div class="eyebrow" style="margin-bottom:8px;">Neu seit 27.08.2026</div>
-          <h2>Wir expandieren in die USA 🇺🇸</h2>
-          <p>Hayes Logistik ist ab sofort nicht mehr nur in Euro Truck Simulator 2 unterwegs, sondern auch im American Truck Simulator. Neues Land, neue Strecken, gleiches Team.</p>
-        </div>
-        <div class="cta-banner-actions">
-          <a href="#/leistungen/usa" class="btn btn-primary" data-route="/leistungen/usa">Mehr erfahren</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="stats-strip">
     <div class="container">
       <div class="stat"><span class="num">5</span><span class="label">Aktive Fahrer</span></div>
       <div class="stat"><span class="num">${CONFIG.gegruendet}</span><span class="label">Gegründet</span></div>
-      <div class="stat"><span class="num">EU<span class="unit">-27</span></span><span class="label">Streckennetz</span></div>
+      <div class="stat"><span class="num">EU<span class="unit">-27</span> · USA</span><span class="label">Streckennetz</span></div>
       <div class="stat"><span class="num">DE<span class="unit">·AT·CH</span></span><span class="label">Sprachraum</span></div>
     </div>
   </section>
@@ -108,15 +93,21 @@ pages['/'] = () => `
     <div class="container">
       <div class="section-head reveal">
         <div class="eyebrow">Was wir tun</div>
-        <h2>Ein Fuhrpark, drei Sparten, ein Ziel</h2>
+        <h2>Ein Fuhrpark, vier Sparten, ein Ziel</h2>
         <p>Von planbaren Linienrouten bis zum spontanen Sondertransport — bei Hayes Logistik findet jede Fahrerin und jeder Fahrer die Strecke, die zum eigenen Spielstil passt.</p>
       </div>
-      <div class="grid grid-3">
+      <div class="grid grid-4">
         <div class="card reveal">
           <div class="icon">${ICON.route}</div>
           <h3>Fernverkehr Europa</h3>
           <p>Feste Linienrouten quer durch Europa, im Konvoi oder solo — planbar und mit klaren Zeitfenstern.</p>
           <a href="#/leistungen/fernverkehr" class="card-link" data-route="/leistungen/fernverkehr">Mehr erfahren</a>
+        </div>
+        <div class="card reveal">
+          <div class="icon">${ICON.compass}</div>
+          <h3>Fernverkehr USA</h3>
+          <p>Neu seit 27.08.2026: Strecken quer durch die USA im American Truck Simulator, mit derselben Disposition wie in Europa.</p>
+          <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Mehr erfahren</a>
         </div>
         <div class="card reveal">
           <div class="icon">${ICON.weight}</div>
@@ -322,6 +313,12 @@ pages['/leistungen'] = () => `
           <a href="#/leistungen/fernverkehr" class="card-link" data-route="/leistungen/fernverkehr">Details ansehen</a>
         </div>
         <div class="card reveal">
+          <div class="icon">${ICON.compass}</div>
+          <h3>Fernverkehr USA</h3>
+          <p>Unsere neue Sparte im American Truck Simulator — Strecken quer durch die USA, seit 27.08.2026.</p>
+          <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Details ansehen</a>
+        </div>
+        <div class="card reveal">
           <div class="icon">${ICON.weight}</div>
           <h3>Sondertransporte</h3>
           <p>Schwergut, Eventfahrten und Sondergüter für alle, die es etwas anspruchsvoller mögen.</p>
@@ -332,12 +329,6 @@ pages['/leistungen'] = () => `
           <h3>Spedition &amp; Disposition</h3>
           <p>Koordination, Routenplanung und Auftragsvergabe für ein reibungsloses Netzwerk.</p>
           <a href="#/leistungen/spedition" class="card-link" data-route="/leistungen/spedition">Details ansehen</a>
-        </div>
-        <div class="card reveal">
-          <div class="icon">${ICON.compass}</div>
-          <h3>Fernverkehr USA</h3>
-          <p>Unsere neue Sparte im American Truck Simulator — Strecken quer durch die USA, seit 27.08.2026.</p>
-          <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Details ansehen</a>
         </div>
       </div>
     </div>
