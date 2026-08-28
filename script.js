@@ -106,7 +106,7 @@ pages['/'] = () => `
         <div class="card reveal">
           <div class="icon">${ICON.compass}</div>
           <h3>Fernverkehr USA</h3>
-          <p>Neu seit 27.08.2026: Strecken quer durch die USA im American Truck Simulator, mit derselben Disposition wie in Europa.</p>
+          <p>Neu seit 27.08.2026: Strecken quer durch die USA, mit derselben Disposition wie in Europa.</p>
           <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Mehr erfahren</a>
         </div>
         <div class="card reveal">
@@ -315,7 +315,7 @@ pages['/leistungen'] = () => `
         <div class="card reveal">
           <div class="icon">${ICON.compass}</div>
           <h3>Fernverkehr USA</h3>
-          <p>Unsere neue Sparte im American Truck Simulator — Strecken quer durch die USA, seit 27.08.2026.</p>
+          <p>Unsere neue Sparte auf US-Strecken — Fernverkehr quer durch die USA, seit 27.08.2026.</p>
           <a href="#/leistungen/usa" class="card-link" data-route="/leistungen/usa">Details ansehen</a>
         </div>
         <div class="card reveal">
@@ -416,11 +416,11 @@ pages['/leistungen/spedition'] = () => serviceDetail(
 pages['/leistungen/usa'] = () => serviceDetail(
   'Fernverkehr USA',
   'Expansion · seit 27.08.2026',
-  'Unsere neue Sparte im American Truck Simulator — Hayes Logistik ist jetzt auch auf den Straßen der USA unterwegs.',
+  'Unsere neue Sparte auf US-Strecken — Hayes Logistik ist jetzt auch auf den Straßen der USA unterwegs.',
   [
-    'Strecken quer durch die USA im American Truck Simulator',
+    'Strecken quer durch die USA, vom ersten Highway bis zur Küste',
     'Gleiche Disposition und Absprache wie im Europa-Netzwerk',
-    'Für Fahrerinnen und Fahrer, die neben ETS2 auch ATS besitzen',
+    'Für Fahrerinnen und Fahrer, die zusätzlich zum Europa-Fuhrpark auch auf US-Strecken unterwegs sein möchten',
     'Wird laufend um weitere Routen und Bundesstaaten erweitert',
   ],
   ICON.compass
